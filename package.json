@@ -9,7 +9,7 @@
     "url": "git://github.com/jybleau/starwars.git"
   },
   "bin": {
-    "starwars": "./lib/cli.js"
+    "starwars": "lib/cli.js"
   },
   "keywords": [
     "star",
