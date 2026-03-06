@@ -6,16 +6,15 @@ starwars is a simple Node.js module that allows you to insert a random Star Wars
 
 Simply install through npm by running...
 
-    npm install starwars
+`npm install @jybleau/starwars`
 
-...and require the module from your Node.js application. You're good to go! Either insert a single (random) quote, or retrieve a list containing all of the available quotes.
 
 ```javascript
-var starwars = require('starwars');
+const starwars = require('starwars');
 
 console.log(starwars()); // "No. I am your Father."
 console.log(starwars()); // "Great shot kid, that was one in a million."
-console.log(JSON.stringify(starwars.withCharacter())); // { quote: "Great shot kid, that was one in a million.", character: "Han Solo" }
+console.log(JSON.stringify(starwars.extended())); // { quote: "Great shot kid, that was one in a million.", character: "Han Solo" }
 console.log(JSON.stringify(starwars.quotes)); // [{ quote: "No. I am your Father.", character: "Darth Vader" }, { quote: "Great shot kid, that was one in a million.", character: "Han Solo" }, ...]
 ```
 
@@ -23,12 +22,12 @@ console.log(JSON.stringify(starwars.quotes)); // [{ quote: "No. I am your Father
 
 starwars can also be used within the command line. Simply install globally through npm by running...
 
-    npm install starwars -g
+`npm install @jybleau/starwars -g`
 
 ...and then typing `starwars` into your console. A random quote will then be displayed on the screen (especially helpful if you're having a bad day and need to read some inspirational text).
 
-Typing `starwars --with-character` into your console. A random quote will be displayed with the associated character name.
+Typing `starwars --extended` into your console. A random quote will be displayed with the associated character name and movie title.
 
 You can also type `starwars --all` into your console to display all of the available quotes.
 
-And type `starwars --all-with-characters` into your console to display all quotes, each with their associated character name.
+And type `starwars --all-extended` into your console to display all quotes, each with their associated character name and movie title.

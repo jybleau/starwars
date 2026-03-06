@@ -1,12 +1,12 @@
 {
-  "name": "starwars",
+  "name": "@jybleau/starwars",
   "version": "1.0.1",
   "description": "A simple Node.js module that allows you to insert a random Star Wars quote into your site, or view one through the command line.",
-  "homepage": "https://github.com/dcgauld/starwars",
+  "homepage": "https://github.com/jybleau/starwars",
   "main": "./index.js",
   "repository": {
     "type": "git",
-    "url": "git://github.com/dcgauld/starwars.git"
+    "url": "git://github.com/jybleau/starwars.git"
   },
   "bin": {
     "starwars": "./lib/cli.js"
@@ -18,10 +18,15 @@
   ],
   "author": {
     "name": "David Gauld",
-    "email": "dcgauld@gmail.com",
-    "web": "http://dcgauld.com"
+    "email": "dcgauld@gmail.com"
   },
+  "contributors": [{
+    "name": "Jacques-Yves Bleau"
+  }],
   "bugs": {
     "url": "https://github.com/dcgauld/starwars/issues"
+  },
+  "scripts": {
+    "test": "node --test"
   }
 }
